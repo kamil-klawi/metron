@@ -1,0 +1,30 @@
+# Bazel artifacts
+/bazel-*
+/bazel-bin
+/bazel-out
+/bazel-testlogs
+
+# C++
+*.o
+*.a
+*.so
+*.out
+
+# CMake
+cmake-build-*/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.user
+
+# Python
+__pycache__/
+*.pyc
+
+# System
+.DS_Store
+Thumbs.db
+
+compile_commands.json

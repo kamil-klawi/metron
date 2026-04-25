@@ -1,0 +1,11 @@
+load("@rules_cc//cc:defs.bzl", "cc_test")
+
+cc_test(
+    name = "test",
+    srcs = glob(["**/*.cc"]),
+    deps = [
+        "//:metron",
+        "@googletest//:gtest_main",
+    ],
+    visibility = ["//visibility:private"],
+)

@@ -1,0 +1,17 @@
+* text=auto
+
+*.hh diff=cpp
+*.cc diff=cpp
+*.sh diff=sh
+*.py diff=py
+
+BUILD.bazel linguist-language=Python
+MODULE.bazel linguist-language=Python
+WORKSPACE.bazel linguist-language=Python
+
+*.pdf binary
+*.png binary
+*.jpg binary
+
+.gitignore export-ignore
+.gitattributes  export-ignore

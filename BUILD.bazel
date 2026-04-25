@@ -1,0 +1,10 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+cc_library(
+    name = "metron",
+    deps = [
+        "//include:include",
+        "//src:src",
+    ],
+    visibility = ["//visibility:public"],
+)
