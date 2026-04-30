@@ -28,6 +28,7 @@
 #include "../si_base.hh"
 #include "../constants.hh"
 #include "length.hh"
+#include "../metric/iso_80000_04.hh"
 
 namespace metron::core::units::non_metric::mass
 {
@@ -58,7 +59,7 @@ namespace metron::core::units::non_metric::mass
      * @name Engineering Units 
      * @{ 
      */
-    inline constexpr double slug = (metron::core::constants::standard_gravity / (metron::core::units::non_metric::length::foot / metron::core::units::meter)) * pound;
+    inline constexpr double slug = (metron::core::units::metric::iso_80000_4::standard_gravity / (metron::core::units::non_metric::length::foot / metron::core::units::meter)) * pound;
     /** @} */
 
 } // namespace metron::core::units::non_metric::mass
