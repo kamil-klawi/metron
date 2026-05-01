@@ -9,3 +9,23 @@ cc_test(
     ],
     visibility = ["//visibility:private"],
 )
+
+cc_test(
+    name = "non_metric_test",
+    srcs = glob(["core/non_metric/*.cc"]),
+    deps = [
+        "//:metron",
+        "@googletest//:gtest_main",
+    ],
+    visibility = ["//visibility:private"],
+)
+
+cc_test(
+    name = "metric_test",
+    srcs = glob(["core/metric/*.cc"]),
+    deps = [
+        "//:metron",
+        "@googletest//:gtest_main",
+    ],
+    visibility = ["//visibility:private"],
+)
