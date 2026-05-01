@@ -8,5 +8,5 @@ TEST(ISO800007Test, IsLumenDividedBySquareMeterEqaulToLux)
     constexpr double lux = metron::core::units::metric::iso_80000_7::lux;
     constexpr double meter = metron::core::units::meter;
 
-    EXPECT_NEAR(lumen / (metron::core::units::meter * metron::core::units::meter), lux, 1e-12);
+    EXPECT_NEAR(lumen / (meter * meter), lux, 1e-12);
 }
